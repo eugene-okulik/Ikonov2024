@@ -2,15 +2,15 @@
 
 print('Даны числа x и y. Получить x − y / 1 + xy')
 
-    x = float(input("Введите значение x: "))
-    y = float(input("Введите значение y: "))
+x = float(input("Введите значение x: "))
+y = float(input("Введите значение y: "))
 
 print('Даны числа: ', x, ',', y)
 
-        ura1 = x * y
-        ura2 = y / 1
-        ura3 = ura1 + ura2
-        ura4 = x - ura3
+ura1= x * y
+ura2= y / 1
+ura3= ura1 + ura2
+ura4= x - ura3
 
 print('Вычислить: x − y / 1 + xy')
 
