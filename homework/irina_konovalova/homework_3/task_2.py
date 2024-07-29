@@ -10,7 +10,7 @@ print('Даны числа: ', x, ',', y)
 ura1= x * y
 ura2= y / 1
 ura3= ura1 + ura2
-ura4= x - ura3
+git add homework\irina_konovalova\homework_3\task_2.pyura4= x - ura3
 
 print('Вычислить: x − y / 1 + xy')
 
