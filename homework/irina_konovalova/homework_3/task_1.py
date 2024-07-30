@@ -6,7 +6,7 @@ a = float(input("Введите значение a: "))
 b = float(input("Введите значение b: "))
 
 c = a + b
-d  = a - b
+d = a - b
 e = a * b
 
 print('Даны числа: ', a, ',', b)
