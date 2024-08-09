@@ -1,6 +1,6 @@
 # Словарь, ДЗ №4
 
-new_dict = {tuple: ['1', '3', '6', '7', 'None', 'text', 'False', '2.42'], list: ['1', '3', '6', '7', 'None', 'text', 'False', '2.42', 'sdsdf', 'Таня', 'Ира', 'Аня', 'Соня', 'Вова'], dict: {'key1':'22', 'key2':'23', 'key3':'147', 'key4':'1', 'key5':'-2'}, set: ['Light', 'Height', 'width', 'wide', 'long', 'deep']}
+new_dict = {tuple: ['1', '3', '6', '7', 'None', 'text', 'False', '2.42'], list: ['1', '3', '6', '7', 'None', 'text', 'False', '2.42', 'sdsdf', 'Таня', 'Ира', 'Аня', 'Соня', 'Вова'], dict: {'key1': '22', 'key2': '23', 'key3':'147', 'key4':'1', 'key5': '-2'}, set: ['Light', 'Height', 'width', 'wide', 'long', 'deep']}
 print(new_dict)
 print("The names of the keys in the dictionary: ", new_dict.keys())
 new_dict['my_tuple'] = new_dict.pop(tuple)
@@ -38,9 +38,9 @@ print("Elements in the 'Dict': ", new_dict["my_dict"])
 my_dict = new_dict["my_dict"]
 elements_dict = len(my_dict)
 print("Number of elements in the 'Dict': ", elements_dict)
-
+# добавьте элемент с ключом ('i am a tuple',) и любым значением
 check = 'i am a tuple'
-getCheck = str(input('Введите фразу "i am a tuple": '))    # добавьте элемент с ключом ('i am a tuple',) и любым значением
+getCheck = str(input('Введите фразу "i am a tuple": '))
 
 if getCheck == check: my_dict.update({getCheck: input("Введите значение ключа: ")})
 if getCheck != check:
@@ -68,8 +68,6 @@ print("             ")
 print("********** Updated dictionary **********")
 
 print(new_dict)
-
-
 
 
 
