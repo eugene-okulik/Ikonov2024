@@ -1,12 +1,12 @@
 # Словарь, ДЗ №4
-
+new_dict = dict()
 new_dict = {tuple: (1, 3, 6, 7, None, 'text', False, 2.42), list: [1, 3, 6, 7, None, 'text', False, 2.42, 'sdsdf', 'Ира', 'Вова'], dict: {'key1': '22', 'key2': '23', 'key3': '147', 'key4': '1', 'key5': '-2'}, set: {'12', '54', 'width', 'wide', 'long', 'deep'}}
-print(new_dict)
-print("The names of the keys in the dictionary: ", new_dict.keys())
 new_dict['tuple'] = new_dict.pop(tuple)
 new_dict['list'] = new_dict.pop(list)
 new_dict['dict'] = new_dict.pop(dict)
 new_dict['set'] = new_dict.pop(set)
+print(new_dict)
+print("Названия ключей: ", new_dict.keys())
 # Tuple
 print("             ")
 print("********** Tuple **********")
@@ -54,3 +54,4 @@ print('Один элемент удален: ', set)
 print("             ")
 print("********** Updated dictionary **********")
 print(new_dict)
+print("Названия ключей: ", new_dict.keys())
