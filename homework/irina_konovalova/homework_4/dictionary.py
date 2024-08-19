@@ -7,7 +7,6 @@ new_dict['tuple'] = new_dict.pop(tuple)
 new_dict['list'] = new_dict.pop(list)
 new_dict['dict'] = new_dict.pop(dict)
 new_dict['set'] = new_dict.pop(set)
-
 # Tuple
 print("             ")
 print("********** Tuple **********")
