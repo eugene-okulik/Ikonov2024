@@ -1,12 +1,23 @@
 # Словарь, ДЗ №4
 new_dict = dict()
-new_dict = {tuple: (1, 3, 6, 7, None, 'text', False, 2.42), list: [1, 3, 6, 7, None, 'text', False, 2.42, 'sdsdf', 'Ира', 'Вова'], dict: {'key1': '22', 'key2': '23', 'key3': '147', 'key4': '1', 'key5': '-2'}, set: {'12', '54', 'width', 'wide', 'long', 'deep'}}
+new_dict = {
+    tuple: (1, 3, 6, 7, None, 'text', False, 2.42),
+    list: [1, 3, 6, 7, None, 'text', False, 2.42, 'sdsdf', 'Ира', 'Вова'],
+    dict: {
+        'key1': '22',
+        'key2': '23',
+        'key3': '147',
+        'key4': '1',
+        'key5': '-2'
+    },
+    set: {'12', '54', 'width', 'wide', 'long', 'deep'}}
 new_dict['tuple'] = new_dict.pop(tuple)
 new_dict['list'] = new_dict.pop(list)
 new_dict['dict'] = new_dict.pop(dict)
 new_dict['set'] = new_dict.pop(set)
 print(new_dict)
 print("Названия ключей: ", new_dict.keys())
+
 # Tuple
 print("             ")
 print("********** Tuple **********")
@@ -30,11 +41,15 @@ print(list)
 # Dict
 print("             ")
 print("********** Dict **********")
-print(new_dict["dict"])
+# print(new_dict["dict"])
 dict = new_dict["dict"]
 check = 'i am a tuple'
-dict[check] = " "
-print("Добавлен ключ 'i am a tuple': ", dict)
+my_tuple_add = tuple([1, 2, 'VSE Otlichno'])
+dict.setdefault(check,(my_tuple_add))
+for i in dict:
+    types = set(type(k) for k in dict.keys())
+print(dict)
+print("Тип данных вложенного словаря с ключом", check, ": ", type(my_tuple_add))
 getDel = "key4"     # удалите какой-нибудь элемент
 dict.pop(getDel)
 print("Удален один элемент ", dict)
