@@ -44,7 +44,7 @@ print("********** Dict **********")
 dict = new_dict["dict"]
 check = ('i am a tuple',)
 my_tuple_add = tuple([1, 2, 'VSE Otlichno'])
-dict.setdefault(check,(my_tuple_add))
+dict.setdefault(check, (my_tuple_add))
 for i in dict:
     types = set(type(k) for k in dict.keys())
 print(dict)
