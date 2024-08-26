@@ -2,7 +2,7 @@
 new_dict = dict()
 new_dict = {
     tuple: (1, 3, 6, 7, None, 'text', False, 2.42),
-    list: [1, 3, 6, 7, None, 'text', False, 2.42, 'sdsdf', 'Ира', 'Вова'],
+    list: [1, 3, None, 'text', 2.42, 'Ира', 'Вова'],
     dict: {
         'key1': '22',
         'key2': '23',
@@ -41,9 +41,8 @@ print(list)
 # Dict
 print("             ")
 print("********** Dict **********")
-# print(new_dict["dict"])
 dict = new_dict["dict"]
-check = 'i am a tuple'
+check = ('i am a tuple',)
 my_tuple_add = tuple([1, 2, 'VSE Otlichno'])
 dict.setdefault(check,(my_tuple_add))
 for i in dict:
